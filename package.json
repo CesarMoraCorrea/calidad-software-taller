@@ -1,8 +1,9 @@
 {
   "name": "calidad-software-taller",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Taller de calidad de software con ESLint, Prettier, Jest y SonarCloud",
+  "main": "src/calculator.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -12,8 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/CesarMoraCorrea/calidad-software-taller.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "eslint",
+    "jest",
+    "sonarcloud",
+    "quality",
+    "devops"
+  ],
+  "author": "Cesar Mora Correa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CesarMoraCorrea/calidad-software-taller/issues"
@@ -28,5 +35,8 @@
     "jest": "^30.2.0",
     "prettier": "^3.6.2",
     "sonarqube-scanner": "^4.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
